@@ -1,7 +1,6 @@
-/* fibo.c -- It prints out the first N Fibonacci */
-
-void main() {
-    int n;        /* The number of fibonacci numbers we will print */
+/* The number of fibonacci numbers we will print */
+m() {
+    int change;        
     int i;        /* The index of fibonacci number to be printed next */ 
     int current;  /* The value of the (i)th fibonacci number */
     int next;     /* The value of the (i+1)th fibonacci number */
@@ -44,3 +43,4 @@ How many Fibonacci numbers do you want to compute? 9
 
 */
 
+$
