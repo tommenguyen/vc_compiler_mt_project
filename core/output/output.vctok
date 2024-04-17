@@ -4,6 +4,7 @@ i
 int
 j
 ;
+// find the maximum of two integersnewline
 int
 gcd
 (
@@ -69,4 +70,3 @@ j
 )
 ;
 }
-$

@@ -1,0 +1,32 @@
+keyword:
+"boolean", "break","continue","else","false","float","for","int","if","return","true","void","while",
+
+0, startingstate
+78 | 79:  "<float-literal>"
+77: "<int-literal>"
+84: "<string-literal>"    
+6969 | 31 | 1| 12 | 20 | 24 | 34 | 40 | 44 | 48: "<id>"
+60: "<="
+67: "=="
+61: ">="
+64: "&&"
+65: "||"
+60: "!!"
+7: "boolean"
+11: "break"
+19: "continue"
+23: "else"
+28: "false"
+93: "float"
+30: "for"
+33: "int"
+89: "if"
+39: "return"
+43: "true"
+47: "void"
+52: "while"
+85: "comment_in_line"
+88: "comment_multiple_lines"
+
+
+acceptstate: all state in transition_table except 62,63,80,81,82,86,87
