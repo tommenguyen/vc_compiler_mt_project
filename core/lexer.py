@@ -15,14 +15,16 @@ if __name__ == '__main__':
         source_code = file.read()
         source_code += '$'
     transtion_table = pd.read_csv("transition_table.csv", index_col=0)
-#initialize the state and the token
+    #initialize the state and the token
     char_iterator = 0
     current_char = source_code[char_iterator] 
     current_state = 0
     current_token = ''
     #initialize the line and column for the error message
-    current_line = 1
-    current_column = 1
+    char_iterator = 0
+    current_char = source_code[char_iterator] 
+    current_state = 0
+    current_token = ''
     tokens = [
 
     ]
@@ -103,6 +105,7 @@ if __name__ == '__main__':
         if  current_char =='newline' and current_state == 0:
             char_iterator += 1
             current_char = source_code[char_iterator]
+            #position tracking
             current_line += 1
             current_column = 1
             continue
@@ -139,7 +142,7 @@ if __name__ == '__main__':
     output_folder = 'output'
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
-    
+    #write the tokens to the output file
     with open(os.path.join(output_folder, 'output.vctok'), 'w') as file:
         for token in tokens:
             file.write(f"{token['spelling']}\n")
